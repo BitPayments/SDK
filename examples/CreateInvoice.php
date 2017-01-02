@@ -21,7 +21,7 @@ try {
     ]);
 
     if ($response->success) {
-        // Переадресация на страницу оплату
+        // Переадресация на страницу оплаты
         header("Location: {$response->message->invoice_link}");
     } else {
         echo $response->error;
